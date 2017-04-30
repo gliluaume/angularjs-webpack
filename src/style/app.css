@@ -1,5 +1,7 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~angular-material/angular-material.css';
 /* styles in src/style directory are applied to the whole page */
-body {
+/*body {
   background: #0147A7;
   color: #fff;
 }
@@ -19,4 +21,4 @@ main {
 footer {
   text-align: center;
   font-size: 0.8em;
-}
+}*/

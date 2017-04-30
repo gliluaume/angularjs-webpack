@@ -30,7 +30,7 @@ module.exports = function makeWebpackConfig() {
    * Karma will set this when it's a test build
    */
   config.entry = isTest ? void 0 : {
-    app: './src/app/app.js'
+    app: './src/app/app.module.js'
   };
 
   /**
@@ -109,6 +109,17 @@ module.exports = function makeWebpackConfig() {
           {loader: 'postcss-loader'}
         ],
       })
+    }, { 
+     /* SASS loader support for *.scss files (styles directory only)
+     * Loads external sass styles into the DOM, supports HMR
+     *
+     */
+      test: /\.scss$/,
+      use: ExtractTextPlugin.extract([
+        'css-loader',
+        'resolve-url-loader',
+        'sass-loader?sourceMap',
+      ]),
     }, {
       // ASSET LOADER
       // Reference: https://github.com/webpack/file-loader
