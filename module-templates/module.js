@@ -1,5 +1,5 @@
 import angular from 'angular';
-import %pascaledModuleName%Component from './%dashedModuleName%.component';
+import %moduleName%Component from './%dashedModuleName%.component';
 
 export default angular
   .module('%moduleName%', [])
