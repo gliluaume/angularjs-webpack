@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-webpack",
+  "name": "material-angularjs-webpack",
   "version": "0.0.1",
   "description": "A workflow for Material Angular made with Webpack",
   "scripts": {
